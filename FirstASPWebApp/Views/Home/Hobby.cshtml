@@ -6,58 +6,70 @@
 <html>
 <head>
     <style>
+        /* Style definitions start here */
+
+        /* Ensures the entire body of the page is displayed as a column and occupies the full viewport height */
         body {
             margin: 0;
             padding: 0;
             display: flex;
             flex-direction: column;
-            min-height: 100vh; /* Ensure the body takes up at least the height of the viewport */
+            min-height: 100vh;
         }
 
+        /* Styles for the header, including background color, text color, and alignment */
         header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            background-color: #333; /* Dark grey background */
+            color: #fff; /* White text color */
+            padding: 10px; /* Padding around the content */
+            display: flex; /* Enables flexbox layout */
+            justify-content: space-between; /* Space out items to the start and end */
+            align-items: center; /* Vertically center items */
         }
 
+            /* Removes margin from the <h1> element inside the header */
             header h1 {
                 margin: 0;
             }
 
+        /* Styles for buttons, including background color, text color, and padding */
         button {
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
+            background-color: #007bff; /* Blue background color */
+            color: #fff; /* White text color */
+            border: none; /* No border */
+            padding: 10px 20px; /* Padding inside the button */
+            cursor: pointer; /* Changes cursor to a pointer on hover */
         }
 
+        /* Allows the main content area to expand and fill the available space */
         main {
-            flex: 1; /* Allow the main content area to expand to fill the remaining space */
-            padding: 20px; /* Add some padding to the main content area */
+            flex: 1;
+            padding: 20px; /* Adds padding inside the main content area */
         }
 
+        /* Styles for the footer, similar to the header with a central text alignment */
         footer {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-            margin-top: auto; /* Push the footer to the bottom of the page */
+            background-color: #333; /* Dark grey background */
+            color: #fff; /* White text color */
+            padding: 10px; /* Padding around the content */
+            text-align: center; /* Centers the text horizontally */
+            margin-top: auto; /* Pushes the footer to the bottom of the viewport */
         }
 
     </style>
 </head>
 <body>
+    <!-- Main content of the page starts here -->
+    <!-- A heading for the calculator -->
     <h2>Hourly Hobby Calculator</h2>
     <br />
+    <!-- Label and input for user to enter hours -->
     <label>Hours requested:</label>
     <input id="hours" />
-    <p>Hourly Rate: $25</p>
+    <p>Hourly Rate: $25</p> <!-- Displaying the hourly rate -->
     <br />
+    <!-- Button to trigger calculation -->
     <input id="calculate" type="button" value="Calculate total" />
-    <p id="output"></p>
+    <p id="output"></p> <!-- Placeholder for displaying the calculation result -->
 </body>
 </html>
